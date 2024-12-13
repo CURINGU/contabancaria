@@ -1,18 +1,24 @@
 package conta;
 import java.util.Scanner;
-
-import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
 		
-		Conta c1 = new Conta(123456, 0001, 1, "Chaves do Oito", 5f);
+		//Objetos classe conta
+		/*Conta c1 = new Conta(123456, 0001, 1, "Chaves do Oito", 5f);
 		c1.visualizar();
-		
 		Conta c2 = new Conta(234567, 0001, 1, "Senhor Maduga", 0f);
-		c2.visualizar();
+		c2.visualizar();*/
+		
+		ContaCorrente cc1 = new ContaCorrente(445879, 0001, 2, "Barriguinha Mole", -2000f, 3000);
+		cc1.visualizar();
+		
+		ContaPoupanca cp1 = new ContaPoupanca(745898, 0001, 1, "Dollynho", 40500, 15);
+		cp1.visualizar();
 		
 		Scanner leia = new Scanner(System.in);
 		int opcao;
